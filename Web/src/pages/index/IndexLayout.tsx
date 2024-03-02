@@ -7,7 +7,7 @@ export const IndexLayout = () => {
     <>
       <Navbar />
       
-      <div className='flex flex-col w-full items-center min-h-screen from-black to-slate-950 via-dark-theme-background text-dark-theme-text_pr bg-gradient-to-br'>
+      <div className='flex flex-col w-full items-center h-full max-h-full from-black to-slate-950 via-dark-theme-background text-dark-theme-text_pr bg-gradient-to-br'>
           <Outlet />
       </div>
     </>

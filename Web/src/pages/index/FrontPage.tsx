@@ -1,5 +1,7 @@
-import { Button, Form, Input } from "antd"
+import { Button, Card, Form, Image, Input } from "antd"
 import { Link } from "react-router-dom"
+
+import OrganizingMoney from '../../assets/OrganizingMoney.jpg'
 
 export const FrontPage = () => {
   return (
@@ -63,9 +65,45 @@ export const FrontPage = () => {
       </section>
 
       <body
-        
+        className="flex flex-col w-full h-full items-center text-center justify-center max-h-full gap-4 p-4"
       >
+        <Card
+          bordered={false}
+          className="w-full h-auto gap-4 p-4 bg-slate-800 shadow shadow-gray-100"
+          hoverable
+          cover={<img src={OrganizingMoney} />}
+        >
+          <div className="flex flex-col text-3xl font-extrabold font-subtitle text-black p-4 gap-6">
+            <p>Create financial Schedules with ease and security</p>
 
+            <p>Manage your money with many types of currencies</p>
+
+            <p>keep track of your expenses</p>
+          </div>
+        </Card>
+        
+        <Card
+          bordered={false}
+          className="w-full h-auto gap-4 p-4 bg-slate-800 shadow shadow-gray-100"
+          hoverable
+        >
+          <div className="flex flex-row gap-4 pr-20">
+            <div className="flex flex-col text-3xl font-extrabold font-subtitle text-black p-4 gap-6">
+              <p>Easily use your money in every country</p>
+
+              <p>Start your way to be a investor</p>
+
+              <p>Your data completely private</p>
+            </div>
+
+            <Image 
+              src={OrganizingMoney} 
+              width={500} height={300}
+              className="rounded-xl border border-black"
+            />
+
+          </div>
+        </Card>
       </body>
     </>
   )

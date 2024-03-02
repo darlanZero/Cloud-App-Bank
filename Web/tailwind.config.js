@@ -34,7 +34,8 @@ export default {
                 secondary: '#252525',
                 terciary: '#262C57',
                 border: '#373737',
-            }
+            },
+            
         },
         fontFamily: {
             'sans': ['Inter', 'sans-serif'],
