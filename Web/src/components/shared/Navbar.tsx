@@ -1,5 +1,5 @@
 import { Layout, Menu } from "antd"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { Cloudy, UserCircle } from 'lucide-react';
 
 const Navbar = () => {
@@ -10,15 +10,17 @@ const Navbar = () => {
 
   return (
     <>
-        <Header className="bg-dark-theme-terciary flex justify-between w-full">
+        <Header className="bg-dark-theme-terciary flex flex-col md:flex-row justify-between h-auto w-full">
             <div className="flex flex-1 items-center p-4 gap-4">
-                <Cloudy color="purple" /> | 
+                <Link to='/' className=" flex flex-row ">
+                    <Cloudy color="purple" width={50} height={50} /> | 
+                </Link>
                 <h1 className="text-3xl font-light text-dark-theme-text_sc font-subtitle">StarsFord - More Than a Bank</h1>
             </div>
 
             <Menu
                 className="bg-dark-theme-terciary" 
-                mode="horizontal"
+                mode='horizontal'
                 items={
                     [
                         
@@ -52,7 +54,7 @@ const Navbar = () => {
                         }
                     ]
                 }
-                defaultSelectedKeys={["2"]}
+                defaultSelectedKeys={["1"]}
                 
             />
         </Header>
