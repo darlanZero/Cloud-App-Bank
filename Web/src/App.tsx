@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { FrontPage, IndexLayout } from './pages'
+import { AboutUs, FrontPage, IndexLayout } from './pages'
 
 function App() {
   
@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route element={<IndexLayout />}>
           <Route index element={<FrontPage />} />
+          <Route path='/about' element={<AboutUs />} />
         </Route>
       </Routes>
     </BrowserRouter>

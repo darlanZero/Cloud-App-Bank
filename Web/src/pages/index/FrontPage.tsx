@@ -2,7 +2,6 @@ import { Button, Card, Form, Image, Input } from "antd"
 import { Link } from "react-router-dom"
 
 import OrganizingMoney from '../../assets/OrganizingMoney.jpg'
-
 export const FrontPage = () => {
   return (
     <>
