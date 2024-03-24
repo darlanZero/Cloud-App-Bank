@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { AboutUs, FrontPage, IndexLayout } from './pages'
+import { AboutUs, FrontPage, IndexLayout, Services } from './pages'
 
 function App() {
   
@@ -10,6 +10,7 @@ function App() {
         <Route element={<IndexLayout />}>
           <Route index element={<FrontPage />} />
           <Route path='/about' element={<AboutUs />} />
+          <Route path='/services' element={<Services />} />
         </Route>
       </Routes>
     </BrowserRouter>
