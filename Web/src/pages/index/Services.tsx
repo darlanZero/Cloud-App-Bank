@@ -20,7 +20,7 @@ export const Services = () => {
                     <Card className="bg-slate-800/15">
                         <h1 className="text-3xl text-dark-theme-terciary font-extrabold font-serif">Crypto Wallet Management</h1>
 
-                        <p>
+                        <p className="text-gray-100 text-xl font-light">
                             Seamlessly manage your cryptocurrency portfolio with our intuitive wallet interface. Send, receive, and store your digital assets with confidence.
                         </p>
                     </Card>
@@ -32,7 +32,7 @@ export const Services = () => {
                             DeFi Access Integration
                         </h1>
 
-                        <p>
+                        <p className="text-gray-100 text-xl font-light">
                             Tap into the world of decentralized finance with our integrated DeFi platform. Explore yield farming, liquidity provision, and peer-to-peer lending with ease.
                         </p>
                     </Card>
@@ -44,7 +44,7 @@ export const Services = () => {
                             Crypto Savings Account
                         </h1>
 
-                        <p>
+                        <p className="text-gray-100 text-xl font-light">
                             Grow your crypto holdings with our secure savings account. Earn competitive interest rates on your digital currencies while maintaining full control of your funds.
                         </p>
                     </Card>
@@ -56,7 +56,7 @@ export const Services = () => {
                             Tokenized Asset Trading
                         </h1>
 
-                        <p>
+                        <p className="text-gray-100 text-xl font-light">
                             Dive into the world of tokenized assets with our trading platform. Buy and sell digital tokens representing real-world assets such as stocks, commodities, and more.
                         </p>
                     </Card>
